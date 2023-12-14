@@ -2,14 +2,23 @@
 
 class Album {
     constructor(id, title, artist, genre) {
-        this.id = id;
-        this.title = title;
-        this.artist = artist;
-        this.genre = genre;
-        this.songs = [];
+        // Konstruktor för Album-klassen
+
+        this.id = id;  
+        // Unik identifierare för albumet
+        this.title = title; 
+        // Titel på album
+        this.artist = artist; 
+        // Artist som är kopplad till album
+        this.genre = genre; 
+        // Genre för album
+        this.songs = [];  
+        // Lista över låtar som tillhör albumet
     }
 
     displayInfo() {
+    // Metod för att visa information om album
+    
         console.log(`Album: ${this.title}`);
         console.log(`Artist: ${this.artist.name}`);
         console.log(`Genre: ${this.genre.name}`);
@@ -19,7 +28,7 @@ class Album {
         });
         console.log('-----------------------');
     }
-
+    // Metod för att lägga till en låt i album
     addSong(song) {
         this.songs.push(song);
     }
