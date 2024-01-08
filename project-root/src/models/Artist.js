@@ -6,7 +6,7 @@ class Artist {
         this.name = name;
         this.genre = genre;
         this.bio = bio;
-        this.albums = []; // Lägg till detta för att lagra artistrs album
+        this.albums = [];
     }
 
     displayInfo() {
